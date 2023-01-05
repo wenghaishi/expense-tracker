@@ -7,3 +7,11 @@
     justify-content: space-around;
     height: 10rem;
   }
+
+  .chart-title {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-left: 15px;
+  }
