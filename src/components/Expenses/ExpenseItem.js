@@ -38,7 +38,7 @@ function ExpenseItem(props) {
             <label className="new-title-text">New title</label>
             <input type="text" className="change-title-input" value={newTitle} onChange={titleChangeHandler}></input>
           </div>
-          <button type="submit" className="change-button" >Change title</button>
+          <button type="submit" className="change-button">Change title</button>
         </form>}
     </Card>
   );

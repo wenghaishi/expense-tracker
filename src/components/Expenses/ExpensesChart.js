@@ -22,10 +22,16 @@ function ExpensesChart(props) {
         console.log(chartDataPoints)
     }
 
+    const totalExpenseHandler = (e) => {
+      const totalExpense = e
+      props.expenseHandler(totalExpense)
+    }
+
+
 
 
   return (
-    <Chart dataPoints={chartDataPoints} />
+    <Chart dataPoints={chartDataPoints}  expenseHandler={totalExpenseHandler}/>
   )
 }
 

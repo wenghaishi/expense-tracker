@@ -4,7 +4,7 @@
     align-items: center;
     padding: 0.5rem;
     margin: 1rem 0;
-    background-color: #4b4b4b;
+    background-color: #2a3244;
   }
   
   .expense-item__description {
@@ -22,14 +22,14 @@
     font-size: 1rem;
     flex: 1;
     margin: 0 1rem;
-    color: white;
+    color:#d3d3d3;
   }
   
   .expense-item__price {
     font-size: 1rem;
     font-weight: bold;
-    color: white;
-    background-color: #3b41c2;
+    color:#d3d3d3;
+    background-color: #1f2636;
     padding: 0.5rem;
     border-radius: 12px;
   }
@@ -55,9 +55,9 @@
     font: inherit;
     cursor: pointer;
     padding: 0.5rem 1rem;
-    border: 1px solid #3737dc;
-    background-color: #3037c4;
-    color: white;
+    border: 1px solid #aaaaaa;
+    background-color: #1f2636;
+    color: #aaaaaa;
     border-radius: 12px;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -65,24 +65,28 @@
   }
   .change-button:hover,
   .change-button:active {
-    background-color: #1b10b5;
-    border-color: #150674;
+    background-color: #1e232d;
+    border-color: #aaaaaa;
   }
 
   .change-title-input {
     font: inherit;
     padding: 0.3rem;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid #d3d3d3;
     width: 10rem;
     max-width: 100%;
-    
+
   }
   .label-input {
     display: flex;
     flex-direction: column;
-    color:white;
+    color:#aaaaaa;
     margin-left: 20px;
+  }
+
+  .input {
+    background-color: #aaaaaa;
   }
 
   .form {

@@ -27,6 +27,7 @@ const dummyExpenses = [
 
 function App() {
   const [expenses, setExpenses] = useState(dummyExpenses);
+  const [totalExpense, setTotalExpense] = useState()
 
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
@@ -36,11 +37,16 @@ function App() {
     console.log(expenses);
   };
 
+  const totalExpenseHandler = (e) => {
+    setTotalExpense(e)
+  }
+
+
   return (
     <div>
       <h1 className="title">Expense tracker app</h1>
-      <NewExpense onAddExpense={addExpenseHandler} />
-      <Expenses items={expenses} />
+      <NewExpense onAddExpense={addExpenseHandler} totalExpense={totalExpense}/>
+      <Expenses items={expenses} expenseHandler={totalExpenseHandler}/>
     </div>
   );
 }
