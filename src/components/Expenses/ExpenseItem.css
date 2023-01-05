@@ -61,11 +61,39 @@
     border-radius: 12px;
     margin-right: 1rem;
     margin-left: 1rem;
-
+    height: 2.8rem;
   }
   .change-button:hover,
   .change-button:active {
     background-color: #1b10b5;
     border-color: #150674;
+  }
+
+  .change-title-input {
+    font: inherit;
+    padding: 0.3rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 10rem;
+    max-width: 100%;
+    
+  }
+  .label-input {
+    display: flex;
+    flex-direction: column;
+    color:white;
+    margin-left: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  .new-title-text {
+    margin-bottom: 5px;
+    text-align: center;
   }
 }
