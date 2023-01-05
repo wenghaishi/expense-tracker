@@ -19,7 +19,7 @@
     border: 1px solid #ccc;
     width: 20rem;
     max-width: 100%;
-    color:#aaaaaa;
+    background-color: #d3d3d3;;
   }
   
   .new-expense__actions {

@@ -23,7 +23,6 @@ const NewExpense = (props) => {
     setIsEditing(true);
   };
 
-
   const cancelHandler = () => {
     setIsEditing(false);
   };
@@ -39,7 +38,7 @@ const NewExpense = (props) => {
             <button onClick={editHandler}>Add new expense</button>
             <div className='total-expense-title-container '>
               <h1 className='total-expense-title'>Total expense: ${props.totalExpense}</h1>
-              <h1 className='total-expense-title'>Number of expenses:</h1>
+              <h1 className='total-expense-title'>Number of expenses:  {props.noExpense}</h1>
             </div>
           </>
         )}

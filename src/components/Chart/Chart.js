@@ -5,7 +5,15 @@ import ChartBar from './ChartBar'
 function Chart(props) {
     const dataPointValues = props.dataPoints.map(dataPoint => dataPoint.value);
     const totalMaximum  = Math.max(...dataPointValues);
-    props.expenseHandler(totalMaximum)
+    console.log(totalMaximum)
+    console.log(dataPointValues)
+
+    let sum = 0
+    for (let num of dataPointValues) {
+      sum = sum + num
+    }
+
+    props.expenseHandler(sum)
   return (
     <div>
         <h1 className='chart-title'>Monthly chart</h1>

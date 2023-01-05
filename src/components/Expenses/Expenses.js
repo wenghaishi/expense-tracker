@@ -19,6 +19,10 @@ function Expenses(props) {
     return expense.date.getFullYear().toString() === filteredYear
   })
 
+  const numberOfExpenses = filteredExpenses.length
+
+  props.expenseNumber(numberOfExpenses)
+
   const totalExpenseHandler = (e) => {
     const totalExpense = e
     props.expenseHandler(totalExpense)
