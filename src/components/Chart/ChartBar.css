@@ -18,7 +18,7 @@
   }
   
   .chart-bar__fill {
-    background-color: rgb(171, 162, 162);
+    background-color: rgb(215, 215, 215);
     width: 18px;
     transition: all 0.3s ease-out;
   }
@@ -27,7 +27,7 @@
     margin-top: 5px;
     font-size: 0.7rem;
     text-align: center;
-    color: rgb(171, 162, 162);
+    color: white;
   }
 
   

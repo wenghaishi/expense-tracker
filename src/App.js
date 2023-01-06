@@ -2,6 +2,7 @@ import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 import { useState } from "react";
 import './App.css'  
+import NavBar from "./components/NavBar/NavBar";
 
 const dummyExpenses = [
   {
@@ -49,7 +50,7 @@ function App() {
 
   return (
     <div>
-      <h1 className="title">Expense tracker app</h1>
+      <NavBar />
       <NewExpense onAddExpense={addExpenseHandler} totalExpense={totalExpense} noExpense={noExpense}/>
       <Expenses items={expenses} expenseHandler={totalExpenseHandler} expenseNumber={expenseNumber}/>
     </div>

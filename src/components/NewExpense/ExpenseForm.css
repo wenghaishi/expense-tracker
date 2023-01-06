@@ -1,5 +1,6 @@
 .new-expense__controls {
     display: flex;
+
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1rem;
@@ -19,9 +20,9 @@
     border: 1px solid #ccc;
     width: 20rem;
     max-width: 100%;
-    background-color: #d3d3d3;;
+    background-color: white;
   }
   
   .new-expense__actions {
-    padding-top: 20px;
+
   }

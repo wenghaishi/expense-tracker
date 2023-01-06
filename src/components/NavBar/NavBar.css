@@ -1,0 +1,15 @@
+.nav {
+    width: 100%;
+    height: 75px;
+    background-color: #1f2636;
+    position: sticky;
+    padding-top: 0;
+    margin-top: -20px;
+}   
+
+.title { 
+    color: white;
+    font-size: 28px;
+    padding-top: 15px;
+    text-align: center;
+}
