@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './ExpenseForm.css'
 
+
 function ExpenseForm(props) {
 
     const [enteredTitle, setEnteredTitle] = useState('')
@@ -56,15 +57,18 @@ function ExpenseForm(props) {
     }
 
   return (
+
+
     <form onSubmit={submitHandler}>
     <div >
+        
         <div className='new-expense__control'>
             <label>Title</label>
-            <input style={{backgroundColor: !isTitleValid ? '#ff6863' : 'white' }} type='text' value={enteredTitle} onChange={titleChangeHandler}/>
+            <input style={{backgroundColor: !isTitleValid ? '#ff0000' : 'white' }} type='text' value={enteredTitle} onChange={titleChangeHandler}/>
         </div>
         <div className='new-expense__control'>
             <label>Amount (In numbers) </label>
-            <input style={{backgroundColor: !isAmountValid ? '#ff6863' : 'white' }} type='number' min="0.01" step="0.01" value={enteredAmount} onChange={amountChangeHandler}/>
+            <input style={{backgroundColor: !isAmountValid ? '#ff0000' : 'white' }} type='number' min="0.01" step="0.01" value={enteredAmount} onChange={amountChangeHandler}/>
         </div>
         <div className='new-expense__control'>
             <label>Date</label>
